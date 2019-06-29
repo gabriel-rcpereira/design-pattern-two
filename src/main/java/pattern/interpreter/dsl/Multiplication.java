@@ -7,7 +7,7 @@ public class Multiplication implements Expression {
     private Expression right;
     private Expression left;
 
-    public Multiplication(Expression right, Expression left) {
+    public Multiplication(Expression left, Expression right) {
         this.right = right;
         this.left = left;
     }

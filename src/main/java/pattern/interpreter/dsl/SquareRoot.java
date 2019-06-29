@@ -10,7 +10,6 @@ public class SquareRoot implements Expression{
         this.number = number;
     }
 
-
     @Override
     public double interpret() {
         return Math.sqrt(number.interpret());

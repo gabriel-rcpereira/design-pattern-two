@@ -7,7 +7,7 @@ public class Division implements Expression {
     private Expression right;
     private Expression left;
 
-    public Division(Expression right, Expression left) {
+    public Division(Expression left, Expression right) {
         this.right = right;
         this.left = left;
     }

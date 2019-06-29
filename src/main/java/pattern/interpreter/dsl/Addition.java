@@ -7,13 +7,13 @@ public class Addition implements Expression {
     private Expression right;
     private Expression left;
 
-    public Addition(Expression right, Expression left) {
+    public Addition(Expression left, Expression right) {
         this.right = right;
         this.left = left;
     }
 
     @Override
     public double interpret() {
-        return right.interpret() + left.interpret();
+        return left.interpret() + right.interpret();
     }
 }

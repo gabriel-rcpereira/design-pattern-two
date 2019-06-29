@@ -7,7 +7,7 @@ public class Subtraction implements Expression {
     private Expression right;
     private Expression left;
 
-    public Subtraction(Expression right, Expression left) {
+    public Subtraction(Expression left, Expression right) {
         this.right = right;
         this.left = left;
     }
