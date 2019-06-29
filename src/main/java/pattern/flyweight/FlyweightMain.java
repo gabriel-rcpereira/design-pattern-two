@@ -1,10 +1,10 @@
 package pattern.flyweight;
 
 import pattern.flyweight.contract.Accord;
-import pattern.flyweight.service.DoAccord;
-import pattern.flyweight.service.MiAccord;
+import pattern.flyweight.accord.DoAccord;
+import pattern.flyweight.accord.MiAccord;
 import pattern.flyweight.service.PianoService;
-import pattern.flyweight.service.ReAccord;
+import pattern.flyweight.accord.ReAccord;
 
 import java.util.Arrays;
 import java.util.List;

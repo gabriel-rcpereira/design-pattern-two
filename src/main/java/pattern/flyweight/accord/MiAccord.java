@@ -1,10 +1,10 @@
-package pattern.flyweight.service;
+package pattern.flyweight.accord;
 
 import pattern.flyweight.contract.Accord;
 
-public class DoAccord implements Accord {
+public class MiAccord implements Accord {
     @Override
     public String getAccord() {
-        return "DO";
+        return "MI";
     }
 }
