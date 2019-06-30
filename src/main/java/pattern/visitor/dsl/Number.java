@@ -18,6 +18,6 @@ public class Number implements Expression {
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.visitor(this);
+        visitor.visit(this);
     }
 }

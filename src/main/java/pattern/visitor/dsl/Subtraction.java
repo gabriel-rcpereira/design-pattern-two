@@ -28,6 +28,6 @@ public class Subtraction implements Expression {
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.visitor(this);
+        visitor.visit(this);
     }
 }
