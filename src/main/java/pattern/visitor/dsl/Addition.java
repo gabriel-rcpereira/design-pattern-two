@@ -28,6 +28,6 @@ public class Addition implements Expression {
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.acceptAddition(this);
+        visitor.visitor(this);
     }
 }

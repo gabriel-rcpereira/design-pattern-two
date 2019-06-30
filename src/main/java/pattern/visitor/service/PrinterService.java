@@ -8,7 +8,7 @@ import pattern.visitor.dsl.Number;
 public class PrinterService implements Visitor {
 
     @Override
-    public void acceptAddition(Addition addition) {
+    public void visitor(Addition addition) {
         System.out.print("(");
         addition.getLeft().accept(this);
         System.out.print("+");
@@ -17,12 +17,12 @@ public class PrinterService implements Visitor {
     }
 
     @Override
-    public void acceptNumber(Number number) {
+    public void visitor(Number number) {
         System.out.print(number.interpret());
     }
 
     @Override
-    public void acceptSubtraction(Subtraction subtraction) {
+    public void visitor(Subtraction subtraction) {
         System.out.print("(");
         subtraction.getLeft().accept(this);
         System.out.print("-");
