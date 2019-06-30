@@ -1,7 +1,7 @@
 package pattern.visitor.dsl;
 
 import pattern.visitor.contract.Expression;
-import pattern.visitor.contract.PrinterVisitor;
+import pattern.visitor.contract.Visitor;
 
 public class Number implements Expression {
 
@@ -17,7 +17,7 @@ public class Number implements Expression {
     }
 
     @Override
-    public void accept(PrinterVisitor printerVisitor) {
-        printerVisitor.printNumber(this);
+    public void accept(Visitor visitor) {
+        visitor.acceptNumber(this);
     }
 }

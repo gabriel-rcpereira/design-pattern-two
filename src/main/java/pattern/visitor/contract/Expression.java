@@ -3,5 +3,5 @@ package pattern.visitor.contract;
 public interface Expression {
 
     double interpret();
-    void accept(PrinterVisitor printerVisitor);
+    void accept(Visitor printerVisitor);
 }
